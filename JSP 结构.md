@@ -6,7 +6,7 @@ JSP 容器与 Web 服务器协同合作，为JSP的正常运行提供必要的�
 
 下图显示了 JSP 容器和 JSP 文件在 Web 应用中所处的位置。
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/jsp-arch.jpg)
+![img](images/jsp-arch.jpg)
 
 ------
 
@@ -24,7 +24,7 @@ JSP 容器与 Web 服务器协同合作，为JSP的正常运行提供必要的�
 
 以上提及到的步骤可以用下图来表示：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/jsp-processing.jpg)
+![img](images/jsp-processing.jpg)
 
 一般情况下，JSP 引擎会检查 JSP 文件对应的 Servlet 是否已经存在，并且检查 JSP 文件的修改日期是否早于 Servlet。如果 JSP 文件的修改日期早于对应的 Servlet，那么容器就可以确定 JSP 文件没有被修改过并且 Servlet 有效。这使得整个流程与其他脚本语言（比如 PHP）相比要高效快捷一些。
 

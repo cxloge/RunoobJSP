@@ -30,7 +30,7 @@ JavaBean是特殊的Java类，使用J ava语言书写，并且遵守JavaBean API
 
 这是StudentBean.java文件：
 
-```
+```java
 package com.runoob;
 
 public class StudentsBean implements java.io.Serializable
@@ -71,7 +71,7 @@ $ javac StudentsBean.java
 
 编译后获得 **StudentBean.class** 文件，将其拷贝到 **<JSP 项目>/WebContent/WEB-INF/classes/com/runoob**，如下图所示:
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/DDBE2229-22EF-45A5-B64A-EA1B74C7F43E.jpg)
+![img](images/DDBE2229-22EF-45A5-B64A-EA1B74C7F43E.jpg)
 
 ------
 
@@ -87,7 +87,7 @@ $ javac StudentsBean.java
 
 接下来给出的是 <jsp:useBean> 标签的一个简单的用法：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <html>
@@ -128,7 +128,7 @@ name属性指的是Bean的id属性。property属性指的是想要调用的gette
 
 接下来给出使用以上语法进行属性访问的一个简单例子：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <html>

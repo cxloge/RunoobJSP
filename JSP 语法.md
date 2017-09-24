@@ -42,7 +42,7 @@ out.println("Your IP address is " + request.getRemoteAddr());
 
 将以上代码保存在hello.jsp中，然后将它放置在 C:\apache-tomcat-7.0.2\webapps\ROOT目录下，打开浏览器并在地址栏中输入http://localhost:8080/hello.jsp。运行后得到以下结果：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/jsp_hello_world.jpg)
+![img](images/jsp_hello_world.jpg)
 
 ### 中文编码问题
 
@@ -55,7 +55,7 @@ out.println("Your IP address is " + request.getRemoteAddr());
 
 接下来我们将以上程序修改为：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -129,7 +129,7 @@ JSP表达式的语法格式：
 
 程序示例：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -160,7 +160,7 @@ JSP注释主要有两个作用：为代码作注释以及将某段代码注释�
 
 JSP注释的语法格式：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -184,6 +184,7 @@ JSP注释的语法格式：
 今天的日期是: 2016-6-25 13:41:26
 ```
 
+
 不同情况下使用注释的语法规则：
 
 | **语法**       | 描述                           |
@@ -192,8 +193,8 @@ JSP注释的语法格式：
 | <!-- 注释 -->  | HTML注释，通过浏览器查看网页源代码时可以看见注释内容 |
 | <\%          | 代表静态 <%常量                    |
 | %\>          | 代表静态 %> 常量                   |
-| \'           | 在属性中使用的单引号                   |
-| \"           | 在属性中使用的双引号                   |
+| \''         | 在属性中使用的单引号                   |
+| \""         | 在属性中使用的双引号                   |
 
 ------
 
@@ -270,7 +271,7 @@ JSP提供对Java语言的全面支持。您可以在JSP程序中使用Java API�
 
 If…else块，请看下面这个例子：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%! int day = 3; %> 
@@ -300,7 +301,7 @@ IF...ELSE 实例
 
 现在来看看switch…case块，与if…else块有很大的不同，它使用out.println()，并且整个都装在脚本程序的标签中，就像下面这样：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%! int day = 3; %> 
@@ -356,7 +357,7 @@ SWITCH...CASE 实例
 
 让我们来看看for循环的例子，以下输出的不同字体大小的"菜鸟教程"：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%! int fontSize; %> 
@@ -379,7 +380,7 @@ SWITCH...CASE 实例
 
 运行后得到以下结果：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/7B4B85CF-FE4B-43CB-AAFF-F8594AD4342C.jpg)
+![img](images/7B4B85CF-FE4B-43CB-AAFF-F8594AD4342C.jpg)
 
 将上例改用while循环来写：
 
@@ -407,7 +408,7 @@ SWITCH...CASE 实例
 
 浏览器访问，输出结果为（fontSize 初始化为0，所以多输出了一行）：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/4F744CC9-E484-45BA-AF18-27AFCF4AD45C.jpg)
+![img](images/4F744CC9-E484-45BA-AF18-27AFCF4AD45C.jpg)
 
 JSP运算符
 

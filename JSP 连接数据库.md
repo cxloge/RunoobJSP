@@ -16,7 +16,7 @@
 
 接下来我们在 MySQL 中创建 RUNOOB 数据库，并创建 websites 数据表，表结构如下：
 
-```
+```sql
 CREATE TABLE `websites` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` char(20) NOT NULL DEFAULT '' COMMENT '站点名称',
@@ -29,7 +29,7 @@ CREATE TABLE `websites` (
 
 插入一些数据：
 
-```
+```sql
 INSERT INTO `websites` VALUES ('1', 'Google', 'https://www.google.cm/', '1', 'USA'), ('2', '淘宝', 'https://www.taobao.com/', '13', 'CN'), ('3', '菜鸟教程', 'http://www.runoob.com', '5892', ''), ('4', '微博', 'http://weibo.com/', '20', 'CN'), ('5', 'Facebook', 'https://www.facebook.com/', '3', 'USA');
 ```
 
@@ -47,7 +47,7 @@ INSERT INTO `websites` VALUES ('1', 'Google', 'https://www.google.cm/', '1', 'US
 
 接下来的这个例子告诉我们如何使用JSTL SQL标签来运行SQL SELECT语句：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*,java.sql.*"%>
@@ -94,7 +94,7 @@ SELECT * from websites;
 
 访问这个JSP例子，运行结果如下：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/jspmysql1.jpg)
+![img](images/jspmysql1.jpg)
 
 ------
 
@@ -102,7 +102,7 @@ SELECT * from websites;
 
 这个例子告诉我们如何使用JSTL SQL标签来运行SQL INSERT语句：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*,java.sql.*"%>
@@ -154,7 +154,7 @@ SELECT * from websites;
 
 访问这个JSP例子，运行结果如下：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/jspmysql2.jpg)
+![img](images/jspmysql2.jpg)
 
 ------
 
@@ -162,7 +162,7 @@ SELECT * from websites;
 
 这个例子告诉我们如何使用JSTL SQL标签来运行SQL DELETE语句：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*,java.sql.*"%>
@@ -217,7 +217,7 @@ SELECT * from websites;
 
 访问这个JSP例子，运行结果如下：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/jspmysql1.jpg)
+![img](images/jspmysql1.jpg)
 
 ------
 
@@ -225,7 +225,7 @@ SELECT * from websites;
 
 这个例子告诉我们如何使用JSTL SQL标签来运行SQL UPDATE语句：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*,java.sql.*"%>
@@ -282,4 +282,4 @@ SELECT * from websites;
 
 访问这个JSP例子，运行结果如下：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/jspmysql3.jpg)
+![img](images/jspmysql3.jpg)

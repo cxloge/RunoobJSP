@@ -103,6 +103,6 @@ request对象提供了一系列方法来获取HTTP信息头，包括表单数据
 
 访问main.jsp，将会得到以下结果：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/jspheadmsg.jpg)
+![img](images/jspheadmsg.jpg)
 
 您可以在上面代码中尝试HttpServletRequest类的其它方法。

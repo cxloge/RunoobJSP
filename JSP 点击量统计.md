@@ -26,7 +26,7 @@ application.getAttribute(String Key);
 
 该实例将介绍如何使用JSP来计算特定页面访问的总人数。如果你要计算你网站使用页面的总点击量，那么你就必须将该代码放在所有的JSP页面上。
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*" %>
@@ -62,7 +62,7 @@ application.getAttribute(String Key);
 
 你也可以通过不同的浏览器访问，计数器会在每次访问后增加1。如下所示：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/jsp7.gif)
+![img](images/jsp7.gif)
 
 ------
 

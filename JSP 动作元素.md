@@ -45,7 +45,7 @@
 
 ------
 
-## <jsp:include>动作元素
+## < jsp:include \>动作元素
 
 <jsp:include>动作元素用来包含静态和动态的文件。该动作把指定文件插入正在生成的页面。语法格式如下：
 
@@ -106,7 +106,7 @@ include 动作实例
 
 ------
 
-## <jsp:useBean>动作元素
+## <jsp:useBean\> 动作元素
 
 **jsp:useBean** 动作用来加载一个将在JSP页面中使用的JavaBean。
 
@@ -132,7 +132,7 @@ jsp:useBean动作最简单的语法为：
 
 ------
 
-## <jsp:setProperty>动作元素
+## <jsp:setProperty\>动作元素
 
 jsp:setProperty用来设置已经实例化的Bean对象的属性，有两种用法。首先，你可以在jsp:useBean元素的外面（后面）使用jsp:setProperty，如下所示：
 
@@ -164,7 +164,7 @@ jsp:setProperty动作有下面四个属性,如下表：
 
 ------
 
-## <jsp:getProperty>动作元素
+## <jsp:getProperty\>动作元素
 
 jsp:getProperty动作提取指定Bean属性的值，转换成字符串，然后输出。语法格式如下：
 
@@ -210,13 +210,13 @@ $ javac TestBean.java
 
 下面是一个 Eclipse 中目录结构图：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/6AC33FBA-0B76-4BFD-A690-E856E9E01900.jpg)
+![img](images/6AC33FBA-0B76-4BFD-A690-E856E9E01900.jpg)
 
 下面是一个很简单的例子，它的功能是装载一个Bean，然后设置/读取它的message属性。
 
 现在让我们在main.jsp文件中调用该Bean:
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
@@ -244,11 +244,11 @@ $ javac TestBean.java
 
 浏览器访问，执行以上文件，输出如下所示：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/D7AD87A8-3392-4D4E-8731-18806B0644CD.jpg)
+![img](images/D7AD87A8-3392-4D4E-8731-18806B0644CD.jpg)
 
 ------
 
-## <jsp:forward> 动作元素
+## <jsp:forward \> 动作元素
 
 　jsp:forward动作把请求转到另外的页面。jsp:forward标记只有一个属性page。语法格式如下所示：
 
@@ -303,7 +303,7 @@ main.jsp文件代码：
 
 ------
 
-## <jsp:plugin>动作元素
+## <jsp:plugin\>动作元素
 
 jsp:plugin动作用来根据浏览器的类型，插入通过Java插件 运行Java Applet所必需的OBJECT或EMBED元素。
 
@@ -330,9 +330,9 @@ plugin动作有多个对应HTML元素的属性用于格式化Java 组件。param
 
 ------
 
-## <jsp:element> 、 <jsp:attribute>、 <jsp:body>动作元素
+## <jsp:element\> 、 <jsp:attribute\>、 <jsp:body\>动作元素
 
-<jsp:element> 、 <jsp:attribute>、 <jsp:body>动作元素动态定义XML元素。动态是非常重要的，这就意味着XML元素在编译时是动态生成的而非静态。
+<jsp:element\> 、 <jsp:attribute\>、 <jsp:body\>动作元素动态定义XML元素。动态是非常重要的，这就意味着XML元素在编译时是动态生成的而非静态。
 
 以下实例动态定义了XML元素：
 
@@ -360,13 +360,13 @@ plugin动作有多个对应HTML元素的属性用于格式化Java 组件。param
 
 浏览器访问以下页面，输出结果如下所示：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/7D8C47F0-0DDE-4F1D-8BE1-B2C9C955683E.jpg)
+![img](images/7D8C47F0-0DDE-4F1D-8BE1-B2C9C955683E.jpg)
 
 ------
 
-## <jsp:text>动作元素
+## <jsp:text\>动作元素
 
-<jsp:text>动作元素允许在JSP页面和文档中使用写入文本的模板，语法格式如下：
+<jsp:text\>动作元素允许在JSP页面和文档中使用写入文本的模板，语法格式如下：
 
 ```
 <jsp:text>模板数据</jsp:text>

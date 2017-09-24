@@ -66,7 +66,7 @@ $CATALINA_HOME/bin/startup.sh
 
 成功启动Tomcat后，通过访问http://localhost:8080/便可以使用Tomcat自带的一些web应用了。假如一切顺利的话，您应该能够看到以下的页面：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/TomcatHomePage.jpg)
+![img](images/TomcatHomePage.jpg)
 
 更多关于配置和运行Tomcat的信息可以在Tomcat提供的文档中找到，或者去Tomcat官网查阅：http://tomcat.apache.org。
 

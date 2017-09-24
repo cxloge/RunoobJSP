@@ -49,7 +49,7 @@ testjsp 为项目地址。
 
 以下是 main.jsp 文件的JSP程序用于处理客户端提交的表单数据，我们使用getParameter()方法来获取提交的数据：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*" %>
@@ -75,7 +75,7 @@ testjsp 为项目地址。
 
 接下来我们通过浏览器访问 **http://localhost:8080/testjsp/main.jsp?name=菜鸟教程&url=http://ww.runoob.com** 输出结果如下所示：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/D47A8578-B8F3-4C46-A58E-98EDFF012158.jpg)
+![img](images/D47A8578-B8F3-4C46-A58E-98EDFF012158.jpg)
 
 ------
 
@@ -107,7 +107,7 @@ testjsp 为项目地址。
 
 通过访问 **http://localhost:8080/testjsp/test.html** 提交表单数据到 main.jsp 文件，演示 Gif 图如下所示：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/jsp2.gif)
+![img](images/jsp2.gif)
 
 在 "站点名" 与 "网址" 两个表单中填入信息，并点击 "提交" 按钮，它将输出结果。
 
@@ -119,7 +119,7 @@ testjsp 为项目地址。
 
 main.jsp文件代码：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*" %>
@@ -151,7 +151,7 @@ String name = new String((request.getParameter("name")).getBytes("ISO-8859-1"),"
 
 以下是test.htm修改后的代码：
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -173,7 +173,7 @@ String name = new String((request.getParameter("name")).getBytes("ISO-8859-1"),"
 
 通过访问 **http://localhost:8080/testjsp/test.html** 提交表单数据到 main.jsp 文件，演示 Gif 图如下所示：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/jsp3.gif)
+![img](images/jsp3.gif)
 
 ------
 
@@ -208,7 +208,7 @@ String name = new String((request.getParameter("name")).getBytes("ISO-8859-1"),"
 
 以下为main.jsp文件代码，用于处理复选框数据：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*" %>
@@ -237,7 +237,7 @@ String name = new String((request.getParameter("name")).getBytes("ISO-8859-1"),"
 
 通过访问 **http://localhost:8080/testjsp/test.html** 提交表单数据到 main.jsp 文件，演示 Gif 图如下所示：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/jsp4.gif)
+![img](images/jsp4.gif)
 
 ------
 
@@ -247,7 +247,7 @@ String name = new String((request.getParameter("name")).getBytes("ISO-8859-1"),"
 
 一旦我们有了一个 Enumeration（枚举），我们就可以调用 hasMoreElements() 方法来确定是否还有元素，以及使用nextElement（）方法来获得每个参数的名称。
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*" %>
@@ -280,7 +280,7 @@ String name = new String((request.getParameter("name")).getBytes("ISO-8859-1"),"
 
 以下是test.htm文件的内容:
 
-```
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -305,6 +305,6 @@ String name = new String((request.getParameter("name")).getBytes("ISO-8859-1"),"
 
 通过访问 **http://localhost:8080/testjsp/test.html** 提交表单数据到 main.jsp 文件，演示 Gif 图如下所示：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/jsp5.gif)
+![img](images/jsp5.gif)
 
 你可以尝试使用以上的JSP代码读取其它对象，如文本框，单选按钮或下拉框等等其他形式的数据。

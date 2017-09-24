@@ -24,7 +24,7 @@ HTTP是无状态协议，这意味着每次客户端检索网页时，都要单�
 
 这个条目意味着，当表单被提交时，指定的名称和值将会自动包含在GET或POST数据中。每当浏览器发送一个请求，session_id的值就可以用来保存不同浏览器的轨迹。
 
-这种方式可能是一种有效的方式，但点击<A HREF>标签中的超链接时不会产生表单提交事件，因此隐藏表单域也不支持通用会话跟踪。
+这种方式可能是一种有效的方式，但点击<A HREF\>标签中的超链接时不会产生表单提交事件，因此隐藏表单域也不支持通用会话跟踪。
 
 ------
 
@@ -72,7 +72,7 @@ JSP引擎将隐含的session对象暴露给开发者。由于提供了session对
 
 这个例子描述了如何使用HttpSession对象来获取创建时间和最后一次访问时间。我们将会为request对象关联一个新的session对象，如果这个对象尚未存在的话。
 
-```jsp
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*" %>
@@ -140,11 +140,11 @@ JSP引擎将隐含的session对象暴露给开发者。由于提供了session对
 
 试着访问 **http://localhost:8080/testjsp/main.jsp** ，第一次运行时将会得到如下结果：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/sessjsp1.jpg)
+![img](images/sessjsp1.jpg)
 
 再次访问，将会得到如下结果：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/sessjsp2.jpg)
+![img](images/sessjsp2.jpg)
 
 ------
 

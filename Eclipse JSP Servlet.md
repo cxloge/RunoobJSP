@@ -1,4 +1,4 @@
-# Eclipse JSP/Servlet
+# Eclipse JSP Servlet
 
 本文假定你已安装了 JDK 环境，如未安装，可参阅 [Java 开发环境配置 ](http://www.runoob.com/java/java-environment-setup.html)。
 
@@ -13,11 +13,11 @@
 
 你可以根据你的系统下载对应的包(以下以Window系统为例)：
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/232104286524890.png)
+![img](images/232104286524890.png)
 
 下载之后，将压缩包解压到D盘（你可以自己选择）：
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/232104410586765.png)
+![img](images/232104410586765.png)
 
 注意目录名不能有中文和空格。目录介绍如下：
 
@@ -31,19 +31,19 @@
 
 接着我们可以双击 startup.bat 启动 Tomcat，弹出如下界面：
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/232105392158264.png)
+![img](images/232105392158264.png)
 
 这个时候，本地的服务器就已经搭建起来了。如果想关闭服务器，可以直接关闭上面的窗口，或者在里面输入Ctrl+C禁止服务。
 
 接着我们在浏览器中输入 **http://localhost:8080/**，如果弹出如下界面，表示tomcat安装成功并且启动起来了：
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/tomcat-index.jpg)
+![img](images/tomcat-index.jpg)
 
 我们现在在浏览器上测试一下它吧：
 
 首先在D:\apache-tomcat-8.0.14\webapps\ROOT目录中新建一个jsp文件：
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/232106198557249.jpg)
+![img](images/232106198557249.jpg)
 
 test.jsp 文件代码如下：
 
@@ -56,7 +56,7 @@ out.print("菜鸟教程 : http://www.runoob.com");
 
 接着在浏览器中访问地址 **http://localhost:8080/test.jsp**, 输出结果如下：
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/test-jsp.jpg)
+![img](images/test-jsp.jpg)
 
 ------
 
@@ -64,15 +64,15 @@ out.print("菜鸟教程 : http://www.runoob.com");
 
 Eclipse J2EE下载后，解压即可使用，我们打开Java EE ，选择菜单栏Windows-->preferences（Mac 系统为 Eclipse-->偏好设置），弹出如下界面：
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/232111301681549.png)
+![img](images/232111301681549.png)
 
 上图中，点击"add"的添加按钮，弹出如下界面：
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/232111442933866.png)
+![img](images/232111442933866.png)
 
 在选项中，我们选择对应的 Tomcat 版本，接着点击 "Next"，选择 Tomcat 的安装目录，并选择我们安装的 Java 环境：
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/232112245587963.png)
+![img](images/232112245587963.png)
 
 点击 "Finish"，完成配置。
 
@@ -80,25 +80,25 @@ Eclipse J2EE下载后，解压即可使用，我们打开Java EE ，选择菜单
 
 选择 "File-->New-->Dynamic Web Project"，创建 TomcatTest 项目：
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/232112541213100.png)
+![img](images/232112541213100.png)
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/302044303245040.png)
+![img](images/302044303245040.png)
 
 点开上图中的红框部分，弹出如下界面：
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/8998BEC1-D622-4BD4-A9E6-8B18D2A5F29C.jpg)
+![img](images/8998BEC1-D622-4BD4-A9E6-8B18D2A5F29C.jpg)
 
 注意如果已默认选择了我们之前安装的 Tomcat 和 JDK 则可跳过此步。
 
 然后，单击finish, 继续：
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/232113121219000.png)
+![img](images/232113121219000.png)
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/232113256216676.png)
+![img](images/232113256216676.png)
 
 工程文件结构：
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/232113367466511.png)
+![img](images/232113367466511.png)
 
 上图中各个目录解析：
 
@@ -109,7 +109,7 @@ Eclipse J2EE下载后，解压即可使用，我们打开Java EE ，选择菜单
 
 在WebContent文件夹下新建一个test.jsp文件。在下图中可以看到它的默认代码：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -126,7 +126,7 @@ Eclipse J2EE下载后，解压即可使用，我们打开Java EE ，选择菜单
 
 接着我们修改下test.jsp文件代码如下所示：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -145,23 +145,23 @@ Eclipse J2EE下载后，解压即可使用，我们打开Java EE ，选择菜单
 
 程序运行之前，我们先修改一下浏览器选项:
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/testjsp1.png)
+![img](images/testjsp1.png)
 
 接着我们运行该项目:
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/runas.png)
+![img](images/runas.png)
 
 运行时，弹出如下错误：(如果没有此错误，请忽略)
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/232120047932694.png)
+![img](images/232120047932694.png)
 
 原因是，我们之前点击了Tomcat安装包中的startup.bat，这样一来就手动打开了Tomcat服务器，这明显是多余的，因为程序运行时，eclipse会自动开启Tomcat服务器。所以我们先手动关掉tomcat软件，再次运行程序，就行了。控制台信息如下：
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/232120199803353.png)
+![img](images/232120199803353.png)
 
 浏览器访问 **http://localhost:8080/TomcatTest/test.jsp**, 即可输出正常结果：
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/A72F19CD-4FEA-4AE3-8D91-43B34623EC37.jpg)
+![img](images/A72F19CD-4FEA-4AE3-8D91-43B34623EC37.jpg)
 
 ------
 
@@ -169,15 +169,15 @@ Eclipse J2EE下载后，解压即可使用，我们打开Java EE ，选择菜单
 
 我们也可以使用以上环境创建 Servlet 文件，选择 "File-->New-->Servlet":
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/sns.png)
+![img](images/sns.png)
 
 位于 TomcatTest项目的 /TomcatTest/src 目录下创建 "HelloServlet" 类，包为 "com.runoob.test":
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/22D8CED0-F2DD-4554-BFBD-2B19D1685FB9.jpg)
+![img](images/22D8CED0-F2DD-4554-BFBD-2B19D1685FB9.jpg)
 
 HelloServlet.java 代码如下所示：
 
-```
+```java
 package com.runoob.test;
 
 import java.io.IOException;
@@ -224,7 +224,7 @@ public class HelloServlet extends HttpServlet {
 
 创建 /TomcatTest/WebContent/WEB-INF/web.xml 文件（如果没有），代码如下所示：
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>  
 <web-app version="2.5"   
     xmlns="http://java.sun.com/xml/ns/javaee"   
@@ -247,6 +247,6 @@ public class HelloServlet extends HttpServlet {
 
 接着重启 Tomcat，浏览器访问 **http://localhost:8080/TomcatTest/HelloServlet**：
 
-![img](http://www.runoob.com/wp-content/uploads/2016/01/3E00DBEA-85CA-4F66-A7E9-24C43BC9C756.jpg)
+![img](images/3E00DBEA-85CA-4F66-A7E9-24C43BC9C756.jpg)
 
 参考文章：http://www.cnblogs.com/smyhvae/p/4046862.html

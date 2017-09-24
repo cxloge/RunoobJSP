@@ -119,6 +119,6 @@ response对象定义了处理创建HTTP信息头的接口。通过使用这个�
 
 我们可以看下以下 Gif 演示图：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/jsp1.gif)
+![img](images/jsp1.gif)
 
 您也可以自己动手修改以上代码，试试使用其他的方法，将能得到更深的体会。

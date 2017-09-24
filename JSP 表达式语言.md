@@ -150,7 +150,7 @@ param和paramValues对象用来访问参数值，通过使用request.getParamete
 
 接下来的例子表明了如何访问request中的username参数：
 
-```
+```java
 <%@ page import="java.io.*,java.util.*"%>
 <%
 	String title = "Accessing Request Param";
@@ -190,7 +190,7 @@ header和headerValues对象用来访问信息头，通过使用 request.getHeade
 
 接下来的例子表明了如何访问user-agent信息头：
 
-```
+```java
 <%@ page import="java.io.*,java.util.*" %>
 <%
     String title = "User Agent Example";
@@ -212,6 +212,6 @@ header和headerValues对象用来访问信息头，通过使用 request.getHeade
 
 运行结果如下：
 
-![jsp-expression-language](http://www.runoob.com/wp-content/uploads/2014/01/jsp-expression-language.jpg)
+![jsp-expression-language](images/jsp-expression-language.jpg)
 
 header对象返回单一值，而headerValues则返回一个字符串数组。

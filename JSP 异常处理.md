@@ -121,7 +121,7 @@ Here is the exception stack trace:
 
 运行结果如下:
 
-![jsp-exeception-1](http://www.runoob.com/wp-content/uploads/2014/01/jsp-exeception-1.jpg)
+![jsp-exeception-1](images/jsp-exeception-1.jpg)
 
 ------
 

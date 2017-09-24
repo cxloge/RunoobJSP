@@ -45,7 +45,7 @@ Filter 的 init 方法中提供了一个 FilterConfig 对象。
 
 如 web.xml 文件配置如下：
 
-```
+```xml
 <filter>
     <filter-name>LoginFilter</filter-name>
     <filter-class>com.runoob.test.LogFilter</filter-class>
@@ -58,7 +58,7 @@ Filter 的 init 方法中提供了一个 FilterConfig 对象。
 
 在 init 方法使用 FilterConfig 对象获取参数：
 
-```
+```java
 public void  init(FilterConfig config) throws ServletException {
     // 获取初始化参数
     String site = config.getInitParameter("Site"); 
@@ -71,7 +71,7 @@ public void  init(FilterConfig config) throws ServletException {
 
 以下是 Servlet 过滤器的实例，将输出网站名称和地址。本实例让您对 Servlet 过滤器有基本的了解，您可以使用相同的概念编写更复杂的过滤器应用程序：
 
-```
+```java
 //导入必需的 java 库
 import javax.servlet.*;
 import java.util.*;
@@ -101,7 +101,7 @@ public class LogFilter implements Filter  {
 
 DisplayHeader.java 文件代码如下：
 
-```
+```java
 //导入必需的 java 库
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -159,7 +159,7 @@ public class DisplayHeader extends HttpServlet {
 
 定义过滤器，然后映射到一个 URL 或 Servlet，这与定义 Servlet，然后映射到一个 URL 模式方式大致相同。在部署描述符文件 **web.xml** 中为 filter 标签创建下面的条目：
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>  
 <web-app>  
 <filter>
@@ -200,7 +200,7 @@ public class DisplayHeader extends HttpServlet {
 
 Web 应用程序可以根据特定的目的定义若干个不同的过滤器。假设您定义了两个过滤器 *AuthenFilter* 和 *LogFilter*。您需要创建一个如下所述的不同的映射，其余的处理与上述所讲解的大致相同：
 
-```
+```xml
 <filter>
    <filter-name>LogFilter</filter-name>
    <filter-class>com.runoob.test.LogFilter</filter-class>
@@ -236,7 +236,7 @@ web.xml 中的 filter-mapping 元素的顺序决定了 Web 容器应用过滤器
 
 例如，上面的实例将先应用 LogFilter，然后再应用 AuthenFilter，但是下面的实例将颠倒这个顺序：
 
-```
+```xml
 <filter-mapping>
    <filter-name>AuthenFilter</filter-name>
    <url-pattern>/*</url-pattern>

@@ -25,7 +25,7 @@ response.setHeader("Location", site);
 
 这个例子表明了JSP如何进行页面重定向：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*" %>

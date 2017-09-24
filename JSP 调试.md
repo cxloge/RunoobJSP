@@ -21,7 +21,7 @@ System.out.println("Debugging message");
 
 这是一个使用System.out.print()的简单例子：
 
-```
+```java
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head><title>System.out.println</title></head>
@@ -75,7 +75,7 @@ J2SE日志框架可为任何运行在JVM中的类提供日志记录服务。因�
 
 让我们来重写以上代码，使用JDK中的 logger API：
 
-```
+```java
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page import="java.util.logging.Logger" %>
 

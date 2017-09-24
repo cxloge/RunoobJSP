@@ -11,11 +11,11 @@ Cookie是存储在客户机的文本文件，它们保存了大量轨迹信息�
 本章节将会传授您如何去设置或重设cookie的方法，还有如何访问它们及如何删除它们。
 
 > JSP Cookie 处理需要对中文进行编码与解码，方法如下：
->
-> ```
-> String   str   =   java.net.URLEncoder.encode("中文"，"UTF-8");            //编码
-> String   str   =   java.net.URLDecoder.decode("编码后的字符串","UTF-8");   // 解码
-> ```
+
+```
+String   str   =   java.net.URLEncoder.encode("中文"，"UTF-8");            //编码
+String   str   =   java.net.URLDecoder.decode("编码后的字符串","UTF-8");   // 解码
+```
 
 ------
 
@@ -108,7 +108,7 @@ response.addCookie(cookie);
 
 main.jsp 文件代码如下所示：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.net.*" %>
@@ -151,7 +151,7 @@ main.jsp 文件代码如下所示：
 
 以下是一个简单的 HTML 表单通过GET方法将客户端数据提交到 main.jsp 文件中,并设置 cookie：
 
-```Jsp
+```java
 <!DOCTYPE html>
 <html>
 <head>
@@ -177,7 +177,7 @@ main.jsp 文件代码如下所示：
 
 通过访问 http://localhost:8080/testjsp/test.html 提交表单数据到 main.jsp 文件，演示 Gif 图如下所示：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/jsp6.gif)
+![img](images/jsp6.gif)
 
 试着输入 "站点名" 和 "网址"，然后点击提交按钮，它将会在您的屏幕中显示 "站点名" 和 "网址"，并且设置 "站点名" 和 "网址" 的两个 cookie。
 
@@ -186,7 +186,8 @@ main.jsp 文件代码如下所示：
 想要读取cookie，您就需要调用request.getCookies()方法来获得一个javax.servlet.http.Cookie对象的数组，然后遍历这个数组，使用getName()方法和getValue()方法来获取每一个cookie的名称和值。
 
 让我们来读取上个例子中的cookie, 以下为 cookie.jsp 文件代码：
-```Jsp
+
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.net.*" %>
@@ -221,7 +222,7 @@ main.jsp 文件代码如下所示：
 ```
 
 浏览器访问后，输出结果为：
-![img](http://www.runoob.com/wp-content/uploads/2014/01/C6A7341F-029A-4244-8B38-BE010E391091.jpg)
+![img](images/C6A7341F-029A-4244-8B38-BE010E391091.jpg)
 
 ## 使用JSP删除Cookie
 
@@ -237,7 +238,7 @@ main.jsp 文件代码如下所示：
 
 下面的程序删除一个名为"name"的cookie，当您第二次运行cookie.jsp时，name 将会为 null。
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.net.*" %>
@@ -276,7 +277,7 @@ main.jsp 文件代码如下所示：
 </html>
 ```
 通过浏览器访问，输出结果为：
-![img](http://www.runoob.com/wp-content/uploads/2014/01/C6A7341F-029A-4244-8B38-BE010E391091.jpg)
+![img](images/C6A7341F-029A-4244-8B38-BE010E391091.jpg)
 再次访问 **http://localhost:8080/testjsp/cookie.jsp**，将会得到如下结果：
-![img](http://www.runoob.com/wp-content/uploads/2014/01/7BF1C669-F7A4-4245-B7B0-B79BBB272604.jpg)
+![img](images/7BF1C669-F7A4-4245-B7B0-B79BBB272604.jpg)
 可以看到名为"name" 的 cookie 已经不见了。您也可以手动在浏览器中删除 cookie。IE 浏览器通过点击Tools菜单项，然后选择Internet Options，点击 Delete Cookies，就能删除所有 cookie 。

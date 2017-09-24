@@ -24,7 +24,7 @@ JSP生命周期就是从创建到销毁的整个过程，类似于servlet生命�
 
 很明显，JSP生命周期的四个主要阶段和servlet生命周期非常相似，下面给出图示：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/jsp_life_cycle.jpg)
+![img](images/jsp_life_cycle.jpg)
 
 ------
 
@@ -93,7 +93,7 @@ public void jspDestroy()
 
 JSP生命周期代码实例如下所示：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <html>
@@ -138,4 +138,4 @@ JSP生命周期代码实例如下所示：
 
 浏览器打开该页面，输出结果为：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/E80496E2-35DF-439F-8A43-6376D92DFA45.jpg)
+![img](images/E80496E2-35DF-439F-8A43-6376D92DFA45.jpg)

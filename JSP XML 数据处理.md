@@ -39,7 +39,7 @@
 
 books.xml文件:
 
-```
+```xml
 <books>
 <book>
   <name>Padam History</name>
@@ -56,7 +56,7 @@ books.xml文件:
 
 main.jsp文件：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
@@ -95,7 +95,7 @@ The price of the second book: 2000
 
 这个是XSLT样式表style.xsl文件：
 
-```
+```xml
 <?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl=
 "http://www.w3.org/1999/XSL/Transform" version="1.0">
@@ -132,7 +132,7 @@ The price of the second book: 2000
 
 这个是main.jsp文件：
 
-```
+```java
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="x" uri="http://java.sun.com/jsp/jstl/xml" %>
  
@@ -166,6 +166,6 @@ The price of the second book: 2000
 
 运行结果如下：
 
-![img](http://www.runoob.com/wp-content/uploads/2014/01/xml-1.jpg)
+![img](images/xml-1.jpg)
 
 更多关于使用JSTL处理XML的内容请查阅[JSP标准标签库](http://www.runoob.com/jsp/jsp-jstl.html)。

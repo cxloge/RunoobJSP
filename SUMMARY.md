@@ -4,7 +4,7 @@
 * [JSP 教程](JSP 教程.md)
     * [JSP 简介](JSP 简介.md)
     * [JSP 开发环境搭建](JSP 开发环境搭建.md)
-    * [Eclipse JSP/Servlet](Eclipse JSP/Servlet.md)
+    * [Eclipse JSP Servlet](Eclipse JSP Servlet.md)
     * [JSP 结构](JSP 结构.md)
     * [JSP 生命周期](JSP 生命周期.md)
     * [JSP 语法](JSP 语法.md)

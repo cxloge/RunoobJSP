@@ -28,7 +28,7 @@ JSP 可以与 HTML form 标签一起使用，来允许用户上传文件到服�
 
 upload.jsp 文件代码如下：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
@@ -62,9 +62,11 @@ upload.jsp 文件代码如下：
 - [commons-fileupload-1.3.2.jar](http://static.runoob.com/download/commons-fileupload-1.3.2.jar)
 - [commons-io-2.5.jar](http://static.runoob.com/download/commons-io-2.5.jar)
 
+
 UploadServlet 的源代码 如下所示：
 
-```
+
+```java
 package com.runoob.test;
 
 import java.io.File;
@@ -86,6 +88,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
 /**
  * Servlet implementation class UploadServlet
  */
+
 @WebServlet("/UploadServlet")
 public class UploadServlet extends HttpServlet {
     private static final long serialVersionUID = 1L;
@@ -176,7 +179,7 @@ public class UploadServlet extends HttpServlet {
 
 message.jsp 文件代码如下：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
@@ -198,7 +201,7 @@ message.jsp 文件代码如下：
 
 编译上面的 Servlet UploadServlet，并在 web.xml 文件中创建所需的条目，如下所示：
 
-```
+```xml
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns="http://java.sun.com/xml/ns/javaee"

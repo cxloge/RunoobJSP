@@ -71,7 +71,7 @@ request对象提供了一系列方法来获取HTTP信息头，包括表单数据
 
 获取Enumeration对象后，用标准的方式来遍历Enumeration对象，用hasMoreElements()方法来确定什么时候停止，用nextElement()方法来获得每个参数的名字。
 
-```Jsp
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*" %>

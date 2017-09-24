@@ -27,7 +27,7 @@ JSP提供了可选项来为每个JSP页面指定错误页面。无论何时页�
 
 接下来的例子为main.jsp指定了一个错误页面。使用<%@page errorPage="XXXXX"%>指令指定一个错误页面。
 
-```
+```java
 <%@ page errorPage="ShowError.jsp" %>
 
 <html>
@@ -131,7 +131,7 @@ Here is the exception stack trace:
 
 接下来的这个例子显示了如何使用try…catch块，将这些代码放在main.jsp中:
 
-```
+```java
 <html>
 <head>
    <title>Try...Catch Example</title>

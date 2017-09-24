@@ -185,7 +185,7 @@ jsp:getProperty动作提取指定Bean属性的值，转换成字符串，然后�
 
 以下实例我们使用了Bean:
 
-```
+```java
 package com.runoob.main;
 
 public class TestBean {

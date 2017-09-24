@@ -35,7 +35,7 @@ java.util.Locale request.getLocale()
 
 这个例子告诉我们如何在JSP中显示语言和国家：
 
-```
+```java
 <%@ page import="java.io.*,java.util.Locale" %>
 <%@ page import="javax.servlet.*,javax.servlet.http.* "%>
 <%
@@ -70,7 +70,7 @@ JSP可以使用西欧语言来输出一个页面，比如英语，西班牙语�
 
 第二点就是，需要使用HTML字符实体来显示特殊字符，比如"&#241;" 代表的是"?"，"&#161;"代表的是 "?" ：
 
-```
+```java
 <%@ page import="java.io.*,java.util.Locale" %>
 <%@ page import="javax.servlet.*,javax.servlet.http.* "%>
 <%
@@ -103,7 +103,7 @@ JSP可以使用西欧语言来输出一个页面，比如英语，西班牙语�
 
 可以使用java.text.DateFormat类和它的静态方法getDateTimeInstance()来格式化日期和时间。接下来的这个例子显示了如何根据指定的区域来格式化日期和时间：
 
-```
+```java
 <%@ page import="java.io.*,java.util.Locale" %>
 <%@ page import="javax.servlet.*,javax.servlet.http.* "%>
 <%@ page import="java.text.DateFormat,java.util.Date" %>
@@ -138,7 +138,7 @@ JSP可以使用西欧语言来输出一个页面，比如英语，西班牙语�
 
 可以使用java.text.NumberFormat类和它的静态方法getCurrencyInstance()来格式化数字。比如在区域特定货币中的long型和double型。接下来的例子显示了如何根据指定的区域来格式化货币：
 
-```
+```java
 <%@ page import="java.io.*,java.util.Locale" %>
 <%@ page import="javax.servlet.*,javax.servlet.http.* "%>
 <%@ page import="java.text.NumberFormat,java.util.Date" %>
@@ -171,7 +171,7 @@ JSP可以使用西欧语言来输出一个页面，比如英语，西班牙语�
 
 可以使用java.text.NumberFormat类和它的静态方法getPercentInstance()来格式化百分比。接下来的例子告诉我们如何根据指定的区域来格式化百分比：
 
-```
+```java
 <%@ page import="java.io.*,java.util.Locale" %>
 <%@ page import="javax.servlet.*,javax.servlet.http.* "%>
 <%@ page import="java.text.NumberFormat,java.util.Date" %>

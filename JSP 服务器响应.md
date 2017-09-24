@@ -83,7 +83,7 @@ response对象定义了处理创建HTTP信息头的接口。通过使用这个�
 
 接下来的例子使用setIntHeader()方法和setRefreshHeader()方法来模拟一个数字时钟：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*" %>

@@ -35,7 +35,7 @@ Date(long millisec)
 
 使用JSP编程可以很容易的获取当前日期和时间，只要使用Date对象的toString()方法就行了，就像下面这样：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*, javax.servlet.*" %>
@@ -85,7 +85,7 @@ SimpleDateFormat使用一种地区敏感的方式来格式化和解析日期，�
 
 对CurrentDate.jsp稍作修改，得到如下修改后的代码：
 
-```
+```java
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="java.io.*,java.util.*" %>
